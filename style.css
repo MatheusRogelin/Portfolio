@@ -22,10 +22,42 @@ nav ul li{
     line-height: 80px;
     margin: 0.5px;
 }
+nav ul li a{
+    color:#ffff00;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background-color: #858585;
+    transition: 0.5s;
+}
 #logo{
     font-weight: bold;
     font-size: 32px;
     line-height: 80px;
     padding: 0px 100px;
     color: #ffff81;
+}
+.checkbtn{
+    color: #ffff00;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /*display: none;*/
+}
+#check{
+    display: none;
+}
+@media(max-width:952px){
+    #logo{
+        font-size: 30px;
+        padding-left:50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
 }
