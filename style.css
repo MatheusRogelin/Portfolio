@@ -1,11 +1,6 @@
 main{
-    background-image: url(matheus_portfolio.jpeg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-color: #858585;
 }
 section{
-    float: right;
-    color: white;
+    color: aqua;
 }
