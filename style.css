@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+body{
+    margin: 0;
+    background-color:#9ccd62;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0.1px;
+    bottom: 0.1px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3c3d42;
+    padding: 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+.logo{
+    margin-right: 50%;
+}
+#logo-style{
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler, .navbar label{
+    display: none;
+}
+@media (max-width:600px) {
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+}
