@@ -1,39 +1,54 @@
-main{
-    background-image: url(matheus_portfolio.jpeg);
-    background-position: top;
+body{
+    margin: 0;
+}
+
+.foto1 ,.foto2 ,.foto3 ,.foto4 {
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    height: 80vh;
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
 }
-.card-clients {
-    top: 20vh;
+.text{
+    display: block;
+    position: absolute;
+    top: 50%;
     width: 100%;
-    height: 20vh;
-    text-align: center;
-    font-size: 25px;
-    display: inline-block;
-}
-.card-clients h1{
-    margin-top: 10%;
-    color: #ffff81;
-    text-align: center;
-}
-.card-clients p{
-    font-size: 20px;
     color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 8px;
+    font-size: 27px;
 }
-.card-clients button{
-    margin-top: 80px;
-    background-color: transparent;
-    padding: 10px;
+.border{
+    padding: 20px;
+    background-color: #111;
 }
-button.active, button:hover{
-    background-color: #858585;
-    color:#ffff81;
-    transition: all 0.5s;
+.section{
+    padding: 20px;
+    text-align: center;
 }
-.card-clients a{
-    color: #ffff81;
-    background-color: transparent;
-    font-size: 20px;
+#section-dark{
+    color: #fff;
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+.foto1{
+    /*Outono*/
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_1280.jpg);
+}
+.foto2{
+    /*eslovênia*/
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828_960_720.jpg);
+}
+.foto3{
+    /*primavera*/
+    background-image: url(https://cdn.pixabay.com/photo/2012/12/13/06/39/snow-69661_960_720.jpg);
+}
+.foto4{
+    /*primavera*/
+    background-image: url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067__340.png);
 }
